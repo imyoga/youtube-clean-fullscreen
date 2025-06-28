@@ -1,0 +1,42 @@
+{
+    "name": "youtube-clean-fullscreen",
+    "description": "YouTube extension for distraction-free viewing - hide all controls, overlays, and UI elements in fullscreen mode with a simple toggle",
+    "homepage": "https://github.com/imyoga/youtube-clean-fullscreen",
+    "version": "1.0.0",
+    "keywords": [
+        "youtube",
+        "fullscreen",
+        "clean",
+        "immersive",
+        "hide controls",
+        "distraction free",
+        "cinema mode",
+        "minimal viewer",
+        "chrome extension"
+    ],
+    "scripts": {
+        "build": "gulp",
+        "watch": "gulp watch",
+        "build:chrome": "gulp chrome",
+        "build:firefox": "gulp firefox"
+    },
+    "bugs": "https://github.com/imyoga/youtube-clean-fullscreen/issues",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/imyoga/youtube-clean-fullscreen.git"
+    },
+    "devDependencies": {
+        "@types/chrome": "^0.0.117",
+        "7zip-min": "^1.4.3",
+        "del": "^6.0.0",
+        "gulp": "^4.0.2",
+        "gulp-json-modify": "^1.0.2",
+        "gulp-rename": "^2.0.0",
+        "gulp-rollup": "^2.17.0",
+        "gulp-zip": "^5.0.2",
+        "merge-stream": "^2.0.0"
+    },
+    "author": "imyoga",
+    "license": "MIT",
+    "private": false
+}

@@ -1,0 +1,99 @@
+.hidePlayPauseAnimation .ytp-bezel,
+.hideVideoOverlays .annotation,
+.hideVideoOverlays .ytp-ce-element,
+.hideVideoOverlays .ytp-paid-content-overlay {
+    display: none !important;
+}
+#hide-controls-options-button img {
+    width: var(--yt-icon-button-icon-width);
+}
+#hide-controls-option-popup {
+    width: 400px;
+    height: 600px;
+    position: fixed;
+    top: 56px;
+    right: 0px;
+    z-index: 9999;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    background-color: white;
+}
+
+/* Hide ALL YouTube controls and overlays when toggle is enabled */
+.hide-all-youtube-controls .ytp-chrome-bottom,
+.hide-all-youtube-controls .ytp-chrome-top,
+.hide-all-youtube-controls .ytp-gradient-bottom,
+.hide-all-youtube-controls .ytp-gradient-top,
+.hide-all-youtube-controls .ytp-bezel,
+.hide-all-youtube-controls .ytp-spinner,
+.hide-all-youtube-controls .ytp-contextmenu,
+.hide-all-youtube-controls .ytp-popup,
+.hide-all-youtube-controls .ytp-tooltip,
+.hide-all-youtube-controls .ytp-cards-teaser,
+.hide-all-youtube-controls .ytp-ce-element,
+.hide-all-youtube-controls .ytp-watermark,
+.hide-all-youtube-controls .ytp-paid-content-overlay,
+.hide-all-youtube-controls .ytp-iv-drawer,
+.hide-all-youtube-controls .ytp-suggested-action,
+.hide-all-youtube-controls .ytp-endscreen,
+.hide-all-youtube-controls .ytp-pause-overlay,
+.hide-all-youtube-controls .ytp-upnext,
+.hide-all-youtube-controls .ytp-videowall-still,
+.hide-all-youtube-controls .annotation,
+.hide-all-youtube-controls .ytp-title,
+.hide-all-youtube-controls .ytp-title-text,
+.hide-all-youtube-controls .ytp-title-expanded-overlay,
+.hide-all-youtube-controls .ytp-playlist-menu,
+.hide-all-youtube-controls .ytp-menuitem,
+.hide-all-youtube-controls .ytp-settings-menu,
+.hide-all-youtube-controls .ytp-panel,
+.hide-all-youtube-controls .ytp-button,
+.hide-all-youtube-controls .ytp-time-display,
+.hide-all-youtube-controls .ytp-live-badge,
+.hide-all-youtube-controls .ytp-scrubber-container,
+.hide-all-youtube-controls .ytp-progress-bar-container,
+.hide-all-youtube-controls .ytp-volume-slider,
+.hide-all-youtube-controls .ytp-chapter-title,
+.hide-all-youtube-controls .ytp-impression-link,
+.hide-all-youtube-controls .ytp-cued-thumbnail-overlay,
+.hide-all-youtube-controls .ytp-autonav-endscreen-upnext-container,
+.hide-all-youtube-controls .ytp-share-panel,
+.hide-all-youtube-controls .ytp-offline-slate,
+.hide-all-youtube-controls .ytp-error {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+/* Prevent controls from showing on hover */
+.hide-all-youtube-controls .html5-video-player:hover .ytp-chrome-bottom,
+.hide-all-youtube-controls .html5-video-player:hover .ytp-chrome-top,
+.hide-all-youtube-controls .html5-video-player:hover .ytp-gradient-bottom,
+.hide-all-youtube-controls .html5-video-player:hover .ytp-gradient-top {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+/* Hide cursor in fullscreen when cursor toggle is enabled */
+.hide-youtube-cursor .html5-video-player.ytp-fullscreen {
+    cursor: none !important;
+}
+
+/* Ensure the video itself remains visible and interactive for keyboard shortcuts */
+.hide-all-youtube-controls .html5-video-player .html5-main-video {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Hide any remaining text overlays */
+.hide-all-youtube-controls .ytp-caption-window-container,
+.hide-all-youtube-controls .caption-window {
+    /* Keep captions visible as they're important for accessibility */
+}
+
+/* Make sure the video container takes full space */
+.hide-all-youtube-controls .html5-video-player.ytp-fullscreen .html5-video-container {
+    width: 100% !important;
+    height: 100% !important;
+}

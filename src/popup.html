@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="popup-container">
+        <div class="header">
+            <img src="icon_128.png" alt="Icon" class="icon">
+            <h1>YouTube Clean Fullscreen</h1>
+        </div>
+        
+        <div class="toggle-section">
+            <div class="toggle-container">
+                <label class="switch">
+                    <input type="checkbox" id="hideControlsToggle">
+                    <span class="slider"></span>
+                </label>
+                <div class="toggle-label">
+                    <strong>Hide All Controls in Fullscreen</strong>
+                    <p>When enabled, all YouTube controls, overlays, and text will be completely hidden when in fullscreen mode. YouTube keyboard shortcuts will still work.</p>
+                </div>
+            </div>
+            
+            <div class="toggle-container">
+                <label class="switch">
+                    <input type="checkbox" id="hideCursorToggle">
+                    <span class="slider"></span>
+                </label>
+                <div class="toggle-label">
+                    <strong>Hide Mouse Cursor</strong>
+                    <p>When enabled, the mouse cursor will also be hidden in fullscreen mode for a completely immersive experience.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="status" id="status"></div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html> 
